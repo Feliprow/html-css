@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Incluindo Vídeos</title>
+</head>
+<body>
+    <h1>Reproduzindo Vídeo hospedados localmente</h1>
+    <p>Este videp está hospedado no meu proprio servidpr</p>
+
+    <video src="images/Teste-Social-25(1).mkv" controls width="500"></video>
+    <!-- forma simples de adicionar, porem tem problemas de compatibilidade -->
+    
+    <video controls poster="images/pexels-phael-14739606.jpg" width="500">
+        <source src="images/teste-social-25.mp4" type="video/mp4">
+        <source src="images/Teste-Social-25(1).mkv" type="video/mkv">
+        <source src="images/Teste-Social-25(1).webm" type="video/webm">
+        <p>Seu navegador não tem compatibilidade com o video</p>
+        <!-- a ordem da cascata influencia -->
+         <!-- videos hospedados dessa maneira irão consumir muita bandalarga -->
+    </video>
+
+    
+</body>
+</html>

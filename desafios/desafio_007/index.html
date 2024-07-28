@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+    <title>Imagem flexível</title>
+</head>
+<body>
+    <h1>Imagem dinâmica</h1>
+    <p>Redimensione seu navegador em diferentes tamanho para ver o efeito dinâmico na imagem</p>
+    <picture>
+        <source media="(max-width: 800px)" srcset="images/paisagem-p.png" type="image/png">
+        <source media="(max-width: 1001px)" srcset="images/paisagem-m.png" type="image/png">
+        <img src="images/paisagem-g.png" alt="preguiça">
+    </picture>
+</body>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabalhando com Imagens</title>
+</head>
+<body>
+    <h1>IMAGEM DINÂMICA</h1>
+
+    <p>Tente abrir eesse site em varios dispositivos diferentes ou simplesmente aumente e diminua o tamanho do seu navegador</p>
+    
+    <picture> 
+        <source media="(max-width: 650px)" srcset="images/foto_p.png" type="image/png">
+        <source media="(max-width: 1001px)" srcset="images/foto_m.png" type="image/png">
+        <img src="images/foto_g.png" alt="imagem flexivel">
+    </picture>
+    <!-- 
+        SEMPRE COLOCAR O TIPO DE IMAGEM NO TYPE="IMAGE"
+
+        FUNCIONA TAMBEM COM O MIN-WIDTH, APENAS REVERTA A LOGICA
+
+        A IMAGEM (IMG) DE BASE SERÁ SEMPRE A PADRÃO
+
+    
+    -->
+    
+    <h2>Usando Audios</h2>
+
+    <audio src="audios/Speak The Truth - Go By Ocean _ Ryan McCaffrey.mp3"  controls preload="metadata"></audio>
+    <br>
+    <code>
+            
+    <pre>&lt;audio src="Audio-selcionado" controls autoplay&gt;&lt;/audio&gt;</pre>
+    </code>
+
+    <h1>Reproduzindo Áudio</h1>
+    <p>Vamos aprender a reproduzir áudios em HTML5.</p>
+    <audio preload="metadata" autoplay controls loop>
+        <source src="audio_de_exemplo.mp3" type="audio/mpeg">
+        <source src="audio_de_exemplo.ogg" type="audio/ogg">
+        <source src="audio_de_exemplo.wav" type="audio/wav">
+        <p>Infelizmente seu navegador não consegue reproduzir áudio. <a href="audio_de_exemplo.mp3">Clique aqui para baixar o arquivo MP3</a></p>
+    </audio>
+
+
+
+</body>
+</html>

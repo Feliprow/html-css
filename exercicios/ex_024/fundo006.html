@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #container {
+            position: relative; /*Padrão*/
+            height: 500px;
+            padding: 10px;
+            background: purple url(imagens/target001.png) no-repeat;
+            background-size: 100% 100%;
+        }
+        #conteudo {
+            position: absolute; /*Assim ele ganha propriedades de direção*/
+            left: 50%;
+            top: 50%;
+            background: yellow url(imagens/target001.png) no-repeat;
+            background-size: 100% 100%;
+
+            margin: auto;
+            height: 200px;
+            width: 400px;
+
+            transform: translate(-50%,-50%);
+        }
+    </style>
+</head>
+<body>
+    <section id="container">
+        <article id="conteudo">
+
+        </article>
+    </section>
+</body>
+</html>
