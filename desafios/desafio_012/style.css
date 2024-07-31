@@ -19,7 +19,7 @@
     padding: 0%;
 }
 body{
-    min-width:750px
+    min-width:750px;
 }
 
 header{
@@ -56,37 +56,58 @@ main .container {
     background-color: #6E6857;
 }
 
+main .container:not(#img1, #img2) {
+    padding: 6vw;
+}
+
 main p{
     font: normal bold 3.5vw var(--fonte-poema);
     color: #D9A76A;
-
+    display: block;
 }
 
-main #img1 p {
-    padding: 10px;
-    border-radius: 20px;
-    display: inline-block;
-    background-color: rgba(0, 0, 0, 0.514);
-    text-shadow: 1px 1px 0px black;
-
+main .direita {
+    text-align: right;
 }
 
 main #img1 {
-    background: black url(images/background001.jpg) center center no-repeat fixed;
+    background: black url(images/background001.jpg) center no-repeat fixed;
     background-size: cover;
-}
-
-main #img2 p {
-    background-color: rgba(0, 0, 0, 0.815);
-    width: fit-content;
-    height: fit-content;
-    padding: 10px;
-    border-radius: 20px;
-
-    
 }
 
 main #img2 {
-    background: black url(images/background002.jpg) center center no-repeat fixed;
+    background: black url(images/background002.jpg) left center no-repeat fixed;
     background-size: cover;
+}
+
+#img1 > p, #img2 > p {
+    background-color: rgba(0, 0, 0, 0.553);
+    display: inline-block;
+    padding: 1.5vw 1.5vw ;
+    margin: 3.5vw;
+    border-radius: 50px;
+}
+
+#img2 > p {
+    background-color: rgba(0, 0, 0, 0.764);
+}
+
+footer {
+    background-color: black;
+    height: 5vw;
+    text-align: center;
+    color: aliceblue;
+    font-family: var(--fonte-poema);
+    padding-top: 10px;
+    font-size: 3.5vw;
+    letter-spacing: 2px;
+}
+
+footer a {
+    text-decoration: none;
+    color: #D9A76A;
+}
+
+footer a::after {
+    content: "🔗";
 }
