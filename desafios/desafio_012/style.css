@@ -5,7 +5,7 @@
 @font-face {
     font-family: 'FonteTitulo';
     src: url('fonts/Direction.otf') format('opentype');
-    font-weight: normal;
+    font-weight: lighter;
     font-style: normal;
 }
 
@@ -18,27 +18,29 @@
     margin: 0%;
     padding: 0%;
 }
-body{
-    min-width:750px;
+
+html, body {
+    min-height: 100vh;
 }
 
 header{
     background-color: #F2E4C9;
-    height: 14vw;
     text-align: center;
-    padding-top: 15px;
     box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.112);
+    padding: 25vh 0;
+
 }
 
 header h1 {
-    font-size:clamp(40px, 6vw, 800px);
+    font: normal 7vw var(--fonte-titulo), serif;
     color: #D9A76A;
-    letter-spacing: 0.07em;
+    letter-spacing: 0.40em;
     text-shadow: 0px 1px 1px #00000052;
+    text-wrap: nowrap;
 }
 
 header p {
-    font-size: clamp(20px, 1.5vw, 400px);
+    font-size: 3vw;
 }
 
 header a {
@@ -47,60 +49,58 @@ header a {
 }
 
 header a:hover {
-    font-size: clamp(20px, 2.8vw, 800px);
+    font-size: clamp(40px, 5vw, 800px);
     transition: 1s;
 }
 
 main .container {
-    height: 50vw;
+    height: 80vh;
     background-color: #6E6857;
-}
-
-main .container:not(#img1, #img2) {
-    padding: 6vw;
+    color: #D9A76A;
+    padding: 45vh 10vw 0;
 }
 
 main p{
-    font: normal bold 3.5vw var(--fonte-poema);
-    color: #D9A76A;
-    display: block;
+    display: inline-block;
+    font-size: 5vh;
+    font-family: var(--fonte-poema);
+    font-weight: 600;
+    text-wrap: nowrap;
 }
 
 main .direita {
     text-align: right;
 }
 
-main #img1 {
+main #img1, #img2 {
     background: black url(images/background001.jpg) center no-repeat fixed;
     background-size: cover;
 }
 
 main #img2 {
-    background: black url(images/background002.jpg) left center no-repeat fixed;
-    background-size: cover;
+    background-image: url(images/background002.jpg);
 }
 
-#img1 > p, #img2 > p {
+#img1 > p{
     background-color: rgba(0, 0, 0, 0.553);
-    display: inline-block;
-    padding: 1.5vw 1.5vw ;
-    margin: 3.5vw;
-    border-radius: 50px;
+    outline: solid rgba(0, 0, 0, 0.553) 3vw;
+    border-radius: 5px;
+
 }
 
 #img2 > p {
     background-color: rgba(0, 0, 0, 0.764);
+    outline: solid rgba(0, 0, 0, 0.764) 3vw;
+    border-radius: 5px;
 }
 
 footer {
     background-color: black;
-    height: 5vw;
     text-align: center;
     color: aliceblue;
-    font-family: var(--fonte-poema);
-    padding-top: 10px;
-    font-size: 3.5vw;
-    letter-spacing: 2px;
+    font: bolder 2em var(--fonte-poema), 'san-serif';
+    letter-spacing: 0.2em;
+    padding: 30px;
 }
 
 footer a {
