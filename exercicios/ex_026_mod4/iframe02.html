@@ -11,7 +11,9 @@
         iframe{
             border: 2px solid red;
             width: 90dvw;
+            height: 40dvh;
             scrollbar-width: 20px;
+            min-height: 280px;
         }
     </style>
 </head>
@@ -23,7 +25,14 @@
         <li><a href="pag-extras/pagina02.html" target="frame">Pagina iframe 02</a></li>
     </ul>
     <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odio, id!</p>
-    <iframe src="" name="frame" frameborder="1"></iframe>
+    <iframe srcdoc="
+    <h1>Escolha uma das opções a cima</h1>
+    <br>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis, itaque! </p>
+
+    <img src='cursoemvideo.png'>
+    
+    " name="frame" frameborder="1"></iframe>
     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam delectus omnis ad, ducimus voluptatem sed temporibus amet vel asperiores quas.</p>
 
     
