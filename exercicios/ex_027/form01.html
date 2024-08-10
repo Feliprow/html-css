@@ -7,11 +7,34 @@
 </head>
 <body>
     <h1>Meu primeiro formulário</h1>
+    <h2>Forma sem funcionalidade</h2>
     <form >
         <p>Nome: <input type="text" name="nome" id=""></p>
         <p>Sobrenome: <input type="text" name="Sobrenome" id=""></p>
         <input type="submit" value="Enviar">
     </form>
     <!-- Dessa forma o Paragrafo com o "nome:" nao tem ligação nenhuma com o input, sendo assim o navegador não vai conseguir interpretar como vínculo, ficando sem funcionalidade -->
+    <h2>Forma funcional</h2>
+
+    <form autocomplete="off" action="cadastro.php">
+        <p> 
+            <label for="nome">Nome:</label> 
+            <input type="text" name="nome" id="nome">
+        </p>
+        <p>
+            <label for="sobrenome">Sobrenome:</label>
+            <input type="text" name="sobrenome" id="sobrenome">
+        </p>
+        <input type="submit" value="Enviar">
+    </form>
+        <!--
+        *Label é usado para 'linkar' a palavra e o input. 
+
+        * tirar o autocomplete caso atrapalhe a funcionalidade.
+
+        * action -> pode-se escolher qualquer linguagem para o action, do exemplo a preferência foi php, mas pode ser java,py e etc...
+     
+        * dependendo da linguagem o "name" ou o "id" são preferiveis, o php usa como padrão o nome, outras linguagens preferem o id como o Java, sempre importante nomear todos as propriedades!
+    -->
 </body>
 </html>
