@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário 06</title>
+</head>
+<body>
+    <h1>Exemplo de formulário</h1>
+    <form action="cadastro.php" method="get" autocomplete="on">
+
+        <p>
+            <label for="icor">Cor:</label>
+            <input type="color" name="cor" id="icor" value="#1a2b7f">
+        </p>
+
+        <p>
+            <label for="inivel">Nível de Satisfação</label>
+            <input type="range" id="inivel" name="nivel" min="1" max="10" value="10">
+        </p>
+
+        <p>
+            <label for="ifoto">Foto de Perfil:</label>
+            <input type="file" name="foto"  id="ifoto">
+        </p>
+
+        <!-- 
+
+
+            
+            IMPORTANTE: Ao usar o input file o conteúdo vira sensível por se tratar de dados privados, entao temos que usar o Metodo POST no formulário.
+        -->
+
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+
+
+
+    </form>
+</body>
+</html>
