@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário 04</title>
+</head>
+<body>
+    <h1>Testando formulários</h1>
+    <form action="cadastro.php" method="get">
+
+        <fieldset>
+            <legend>dados pessoais</legend>
+            <p>
+                <label for="email">E-mail</label>
+                <input type="email" id="email" name="email" placeholder="e-mail" autocomplete="email"
+                required>
+            </p>
+            <p>
+                <label for="tel">Telefone</label>
+                <input type="tel" name="tel" id="tel" required autocomplete="tel"
+                placeholder="telefone"
+                pattern="^\d{4,5}-d{4}$"
+                >
+            </p>
+        </fieldset>
+
+        <!-- 
+            ATRIBUTO: fildset. Muito util para unir formulários
+
+            ATRIBUTO: legend. Apresenta uma Legenda para seu ancestral fildset.
+        -->
+        <p>
+        <input type="submit">
+        <input type="reset">
+        </p>
+
+    </form>
+</body>
+</html>
